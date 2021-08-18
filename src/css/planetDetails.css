@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+:root {
+  --veryLightGray :rgb(212,213,224);
+  --lightGray: rgb(88,89,115);
+  --darkGray: rgb(68,67,83);
+  --white: rgb(255, 255, 255);
+}
+
+.planet-details {
+  margin: 0 20px 30px 20px;
+}
+
+.planet-details-flex {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Spartan', sans-serif;
+  color: var(--white);
+}
+
+/* Planet Image */
+.planet-img {
+  order: 2; 
+  max-width: 400px;
+  max-height: 400px; 
+  width: 100%;
+  height: auto;
+}
+
+.planet-img-div {
+  text-align: center; 
+}
+
+/* Planet Buttons Styling */
+.planet-btn-div {
+  order: 0;
+}
+
+.planet-btn-div-flex {
+  display: flex;
+  justify-content: space-between;  
+  order: 0;
+  border-bottom: 1px solid var(--veryLightGray);
+  padding: 1em 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: 'Spartan', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.planet-info-btn {
+  padding: 1em 0;
+  margin: 0 1em;
+}
+
+/* Planet Content Styling */
+.planet-name {
+  font-family: 'Antonio', sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.planet-name-subtitle {
+  line-height: 1.7;
+  margin: 2em 0; 
+  color: var(--veryLightGray);
+}
+
+.planet-wiki-external-link,
+.planet-wiki-external-link-icon {
+  color: var(--darkGray);
+}
+
+.planet-wiki-external-link {
+  margin: 0 5px; 
+  font-weight: 700;
+}
+
+.planet-content {
+  order: 1;
+  text-align: center;
+}
+
+.planet-content-btn-div {
+  display: none;
+}
+
+
+/* Tablet screens */
+@media (min-width: 770px) {
+  .planet-btn-div {
+    display: none;
+  }
+
+  .planet-content-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .planet-content {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .planet-content-div {
+    width: 50%;
+  }
+
+  .planet-content-btn-div {
+    display: block;
+    width: 42%; 
+  }
+
+  .planet-content-btn-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .planet-content-btn {
+    border: 1px solid var(--lightGray);
+    text-align: left;
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+
+  .planet-content-btn span {
+    margin-right: 2em;
+    color: var(--lightGray);
+  }
+}
+
+/* Desktop and big screens */
+@media screen and (min-width: 1200px) {
+  .planet-details-flex {
+    flex-direction: row;
+  }
+
+  .planet-content-btn {
+    width: 100%;
+  }
+
+  .planet-content-btn-div {
+    width: 50%;
+  }
+
+  .planet-content-flex {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .planet-img-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .planet-img {
+    width: 400px;
+    height: 400px; 
+  }
+
+  .planet-content-flex > * {
+    width: 70%;
+  }
+
+  .planet-details {
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+
+  .wiki-link-div {
+    margin-bottom: 2em;
+  }
+
+}

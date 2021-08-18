@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: rgba(7,7,34,255);
+  background-image: url('../assets/background-stars.svg');
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}

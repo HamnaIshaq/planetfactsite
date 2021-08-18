@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+
+:root {
+  --lightGray: rgb(88,89,115);
+  --darkGray: rgb(68,67,83);
+  --white: rgb(255, 255, 255);
+}
+
+.planet-stats-section {
+  font-family: 'Spartan' , sans-serif;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0 20px 70px 20px;
+}
+
+.planet-stats-section-flex {
+  display: flex;
+  flex-direction: column; 
+}
+
+.planet-stats {
+  border: 1px solid var(--darkGray);
+  padding: .5em 2em;
+  margin-top: 1em;
+}
+
+.planet-stats-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.planet-stats-h4 {
+  font-size: 10px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--lightGray);
+}
+
+.planet-stats-h4-subtitle {
+  font-family: 'Antonio', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (min-width: 770px) {
+  .planet-stats-section-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .planet-stats-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .planet-stats {
+    padding-left: .5em;
+    padding-top: 1.5em; 
+    margin: 0 .5em; 
+  }
+
+  .planet-stats-h4 {
+    text-align: left;
+  }
+
+  .planet-stats-h4-subtitle {
+    padding: .25em 0;
+  }
+  
+}

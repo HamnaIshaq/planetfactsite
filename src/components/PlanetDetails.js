@@ -17,7 +17,7 @@ const PlanetDetails = ({ planetName }) => {
           <p className="planet-name-subtitle">{planetHeadings[0][`${planetInfo}`].content}</p>
           <div className="wiki-link-div">
             <span>Source : </span>
-            <a className="planet-wiki-external-link" href={planetHeadings[0][`${planetInfo}`].source} target="_blank">Wikipedia</a>
+            <a className="planet-wiki-external-link" href={planetHeadings[0][`${planetInfo}`].source} target="_blank" rel="noreferrere">Wikipedia</a>
             <span><i className="fas fa-external-link-square-alt planet-wiki-external-link-icon"></i></span>
           </div>
           
@@ -57,7 +57,7 @@ const PlanetDetails = ({ planetName }) => {
       </div>
       
       <div className="planet-img-div">
-        <img src={planetHeadings[0].images[`${planetInfo}`]} className="planet-img" alt="Planet Image"/> 
+        <img src={planetHeadings[0].images[`${planetInfo}`]} className="planet-img" alt="Planet"/> 
       </div>
     
     </section>
